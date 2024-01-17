@@ -21,6 +21,8 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a 
 ```
 
 ## Value for the SSM Parameter (/alarm/AWS-CWAgentLinConfig):
+- go to System manager (SSM) --> parameter store --> create a store with same name as(/alarm/AWS-CWAgentLinConfig) used above to fetch data, in userdata section.
+- create it before EC2
 ```bash
 {
 	"metrics": {
