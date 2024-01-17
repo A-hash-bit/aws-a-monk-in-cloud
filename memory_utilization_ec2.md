@@ -4,7 +4,7 @@
 
 ### Step 1: Create an IAM and Attach CloudWatch and SSM Full Access - EC2-CloudWatch-Role
 ### Step 2: Create a parameter in Systems Manger --> parameter store with the name "/alarm/AWS-CWAgentLinConfig" and store the value.
-# same paramater store can be used for multiple ec2 instances
+#### same paramater store can be used for multiple ec2 instances
 ### Step 3: Create an EC2 Instance, Attach the role created in Step 1 and Add the commands in the Userdata Section.
 
 
